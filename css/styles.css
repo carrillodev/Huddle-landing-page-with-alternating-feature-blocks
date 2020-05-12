@@ -8,5 +8,73 @@ body {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
 }
+body header {
+  background-image: url("../images/bg-hero-desktop.svg");
+  background-size: cover;
+  background-color: #ebfbff;
+}
+body header .wrapper {
+  padding: 0 80px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+body header .wrapper .huddle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+body header .wrapper .huddle .logo img {
+  width: 83%;
+}
+body header .wrapper .huddle .btn-white {
+  text-decoration: none;
+  background: #fff;
+  color: #00252e;
+  padding: 14px 65px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.875em;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+body header .wrapper .information {
+  width: 45%;
+  padding-right: 50px;
+}
+body header .wrapper .information h2 {
+  font-size: 2.5em;
+  color: #00252e;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 30px;
+}
+body header .wrapper .information p {
+  font-size: 1.15em;
+  color: #00252e;
+  margin-bottom: 30px;
+}
+body header .wrapper .information .btn-pink {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  background: #ff52bf;
+  font-weight: 700;
+  font-size: 0.875em;
+  padding: 20px 0;
+  border-radius: 60px;
+  width: 55%;
+  text-align: center;
+  max-width: 300px;
+}
+body header .wrapper .illustration {
+  width: 55%;
+  padding: 0 5px;
+}
+body header .wrapper .illustration img {
+  width: 100%;
+}
 
 /*# sourceMappingURL=styles.css.map */

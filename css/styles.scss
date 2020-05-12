@@ -1,3 +1,8 @@
+$pink: hsl(322, 100%, 66%);
+$veryPaleCyan: hsl(193, 100%, 96%);
+$veryDarkCyan: hsl(192, 100%, 9%);
+$grayishBlue: hsl(208, 11%, 55%);
+
 *{
     margin: 0;
     padding: 0;
@@ -7,4 +12,74 @@
 body{
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
+    header{
+        background-image: url('../images/bg-hero-desktop.svg');
+        background-size: cover;
+        background-color: $veryPaleCyan;
+        .wrapper{
+            padding: 0 80px;
+            padding-top: 50px;
+            padding-bottom: 60px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .huddle{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 60px;
+                .logo{
+                    img{
+                        width: 83%;
+                    }
+                }
+                .btn-white{
+                    text-decoration: none;
+                    background: #fff;
+                    color: $veryDarkCyan;
+                    padding: 14px 65px;
+                    border-radius: 50px;
+                    font-weight: 700;
+                    font-size: 0.875em;
+                    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+                }
+            }
+            .information{
+                width: 45%;
+                padding-right: 50px;
+                h2{
+                    font-size: 2.5em;
+                    color: $veryDarkCyan;
+                    font-family: 'Poppins', sans-serif;
+                    margin-bottom: 30px;
+                }
+                p{
+                    font-size: 1.15em;
+                    color: $veryDarkCyan;
+                    margin-bottom: 30px;
+                }
+                .btn-pink{
+                    text-decoration: none;
+                    color: #fff;
+                    display: inline-block;
+                    background: $pink;
+                    font-weight: 700;
+                    font-size: 0.875em;
+                    padding: 20px 0;
+                    border-radius: 60px;
+                    width: 55%;
+                    text-align: center;
+                    max-width: 300px;
+                }
+            }
+            .illustration{
+                width: 55%;
+                padding: 0 5px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
