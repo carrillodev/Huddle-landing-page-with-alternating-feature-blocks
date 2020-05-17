@@ -82,4 +82,80 @@ body{
             }
         }
     }
+    main{
+        padding: 0 105px;
+        margin-top: 160px;
+        .card{
+            display: flex;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+            border-radius: 15px;
+            margin-bottom: 40px;
+            .card-content{
+                padding: 0 120px;
+                width: 65%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h3, p{
+                    width: 100%;
+                    margin: 0;
+                }
+                h3{
+                    margin-bottom: 10px;
+                    font-size: 1.75em;
+                    color: $veryDarkCyan;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                }
+                p{
+                    font-size: 1.125em;
+                    color: $grayishBlue;
+                    line-height: 1.5em;
+                }
+            }
+            .card-image{
+                width: 40%;
+                padding: 55px 30px 50px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .advice{
+            background-color: #fff;
+            overflow:visible;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+            width: 65%;
+            margin: 0 auto;
+            margin-top: 60px;
+            text-align: center;
+            padding-top: 65px;
+            position: relative;
+            bottom: -95px;
+            h2{
+                font-family: 'Poppins', sans-serif;
+                font-size: 2em;
+                color: $veryDarkCyan;
+                margin-bottom: 35px;
+            }
+            a{    
+                text-decoration: none;
+                color: #fff;
+                display: inline-block;
+                background: $pink;
+                font-weight: 700;
+                font-size: 1.25em;
+                padding: 25px 0;
+                width: 50%;
+                border-radius: 60px;
+                margin-bottom: 50px;
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            }
+        }
+    }
+    footer{
+        background: $veryDarkCyan;
+        padding-top: 200px;
+    }
 }
