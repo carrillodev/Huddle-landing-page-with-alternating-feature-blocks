@@ -156,6 +156,90 @@ body{
     }
     footer{
         background: $veryDarkCyan;
-        padding-top: 200px;
+        padding: 190px 120px 0;
+        color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        .logo{
+            width: 100%;
+            margin-bottom: 40px;
+            .logo-white{
+                fill: #fff;
+            }
+        }
+        .column1{
+            width: 32%;
+            .ubication, .phone, .email{
+                display: flex;
+                margin-bottom: 25px;
+                .image{
+                    margin-right: 25px;
+                    padding-top: 5px;
+                    img{
+                        opacity: 0.85;
+                    }  
+                }
+                p{
+                    opacity: 0.85;
+                    font-weight: 400;
+                    line-height: 1.6em;
+                }
+            }
+        }
+        .column2{
+            margin-left: 125px;
+            margin-right: 155px;
+            display: flex;
+            .left, .right{
+                list-style-type: none;
+                font-size: 1.125em;
+                li{
+                    opacity: 0.85;
+                    margin-bottom: 20px;
+                }
+            }
+            .left{
+                margin-right: 120px;
+            }
+        }
+        .column3{
+            a{
+                display: inline-block;
+                text-decoration: none;
+                color: #fff;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                text-align: center;
+                line-height: 2em;
+                vertical-align: middle;
+                font-size: 0.875em;
+                margin-right: 10px;
+            }
+            
+        }
+        .copyright{
+            font-family: 'Poppins', sans-serif;
+            text-align: right;
+            width: 100%;
+            font-size: 0.75em;
+            font-weight: 200;
+            margin-bottom: 40px;
+            word-spacing: 0.5px;
+        }
+        .attribution{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+            opacity: 0.8;
+            a{
+                text-decoration: none;
+                color: #fff;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
     }
 }

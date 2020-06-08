@@ -150,7 +150,88 @@ body main .advice a {
 }
 body footer {
   background: #00252e;
-  padding-top: 200px;
+  padding: 190px 120px 0;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+body footer .logo {
+  width: 100%;
+  margin-bottom: 40px;
+}
+body footer .logo .logo-white {
+  fill: #fff;
+}
+body footer .column1 {
+  width: 32%;
+}
+body footer .column1 .ubication, body footer .column1 .phone, body footer .column1 .email {
+  display: flex;
+  margin-bottom: 25px;
+}
+body footer .column1 .ubication .image, body footer .column1 .phone .image, body footer .column1 .email .image {
+  margin-right: 25px;
+  padding-top: 5px;
+}
+body footer .column1 .ubication .image img, body footer .column1 .phone .image img, body footer .column1 .email .image img {
+  opacity: 0.85;
+}
+body footer .column1 .ubication p, body footer .column1 .phone p, body footer .column1 .email p {
+  opacity: 0.85;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+body footer .column2 {
+  margin-left: 125px;
+  margin-right: 155px;
+  display: flex;
+}
+body footer .column2 .left, body footer .column2 .right {
+  list-style-type: none;
+  font-size: 1.125em;
+}
+body footer .column2 .left li, body footer .column2 .right li {
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+body footer .column2 .left {
+  margin-right: 120px;
+}
+body footer .column3 a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  text-align: center;
+  line-height: 2em;
+  vertical-align: middle;
+  font-size: 0.875em;
+  margin-right: 10px;
+}
+body footer .copyright {
+  font-family: "Poppins", sans-serif;
+  text-align: right;
+  width: 100%;
+  font-size: 0.75em;
+  font-weight: 200;
+  margin-bottom: 40px;
+  word-spacing: 0.5px;
+}
+body footer .attribution {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+body footer .attribution a {
+  text-decoration: none;
+  color: #fff;
+}
+body footer .attribution a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */
