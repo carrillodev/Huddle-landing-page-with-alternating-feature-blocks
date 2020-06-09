@@ -17,9 +17,7 @@ body{
         background-size: cover;
         background-color: $veryPaleCyan;
         .wrapper{
-            padding: 0 80px;
-            padding-top: 50px;
-            padding-bottom: 60px;
+            padding: 50px 80px 60px;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
@@ -38,7 +36,7 @@ body{
                     text-decoration: none;
                     background: #fff;
                     color: $veryDarkCyan;
-                    padding: 14px 65px;
+                    padding: 14px 60px;
                     border-radius: 50px;
                     font-weight: 700;
                     font-size: 0.875em;
@@ -71,6 +69,7 @@ body{
                     width: 55%;
                     text-align: center;
                     max-width: 300px;
+                    box-shadow: 0 10px 15px -3px rgba(255, 82, 191, 0.3), 0 4px 6px -2px rgba(255, 82, 191, 0.3);
                 }
             }
             .illustration{
@@ -83,13 +82,12 @@ body{
         }
     }
     main{
-        padding: 0 105px;
         margin-top: 160px;
         .card{
             display: flex;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
             border-radius: 15px;
-            margin-bottom: 40px;
+            margin: 0 105px 40px;
             .card-content{
                 padding: 0 120px;
                 width: 65%;
@@ -163,9 +161,6 @@ body{
         .logo{
             width: 100%;
             margin-bottom: 40px;
-            .logo-white{
-                fill: #fff;
-            }
         }
         .column1{
             width: 32%;
@@ -175,8 +170,8 @@ body{
                 .image{
                     margin-right: 25px;
                     padding-top: 5px;
-                    img{
-                        opacity: 0.85;
+                    svg{
+                        opacity: 1;
                     }  
                 }
                 p{
@@ -203,8 +198,8 @@ body{
             }
         }
         .column3{
+            display: flex;
             a{
-                display: inline-block;
                 text-decoration: none;
                 color: #fff;
                 width: 30px;
@@ -239,6 +234,175 @@ body{
                 &:hover{
                     text-decoration: underline;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px){
+    body{
+        header{
+            .wrapper{
+                max-width: 1440px;
+                margin: 0 auto;
+            }
+        }
+        main{
+            .card{
+                max-width: 1230px;
+                margin: 0 auto;
+                margin-bottom: 40px;
+            }
+            .advice{
+                max-width: 936px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+    body{
+        header{
+            background-image: url('../images/bg-hero-mobile.svg');
+            background-color: $veryPaleCyan;
+            background-repeat: no-repeat;
+            background-size: contain;
+            .wrapper{
+                padding: 50px 30px 64px;
+                .huddle{
+                    margin-bottom: 165px;
+                    .btn-white{
+                        padding: 10px 45px;
+                        font-size: 1.25em;
+                    }
+                }
+                .information, .illustration{
+                    padding: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+                .information{
+                    padding: 0 40px;
+                    margin-bottom: 106px;
+                    h2{
+                        font-size: 3em;
+                        margin-bottom: 40px;
+                    }
+                    p{
+                        font-size: 2em;
+                        line-height: 1.5em;
+                        margin-bottom: 65px;
+                    }
+                    .btn-pink{
+                        max-width: none;
+                        width: 79%;
+                        font-size: 1.45em;
+                        line-height: 1.8em;
+                        color: rgba($color: #fff, $alpha: 0.95);
+                        
+                    }
+                }
+                .illustration{
+                    padding: 0 45px;
+                }
+            }
+        }
+        main{
+            margin-top: 120px;
+            .card{
+                &:nth-child(2){
+                    flex-direction: column;
+                }
+                margin: 0 40px 80px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+                border-radius:30px;
+                flex-direction: column-reverse;
+                flex-wrap: wrap;
+                padding-bottom: 65px;
+                .card-image, .card-content{
+                    width: 100%;
+                }
+                .card-image{
+                    padding: 15%;
+                }
+                .card-content{
+                    margin-top: 10px;
+                    text-align: center;
+                    padding: 0 80px;
+                    h3{
+                        font-size: 2.5em;
+                        margin-bottom: 30px;
+                    }
+                    p{
+                        font-size: 1.75em;
+                    }
+                }
+            }
+            .advice{
+                width: 94%;
+                margin-top: 102px;
+                padding-top: 90px;
+                border-radius: 30px;
+                bottom: -140px;
+                h2{
+                    font-size: 2.25em;
+                    margin-bottom: 50px;
+                }
+                a{
+                    margin-bottom: 80px;
+                    width: 56.5%;
+                    padding: 27px 0;
+                }
+            }
+        }
+        footer{
+            padding: 280px 35px 0;
+            .column1{
+                width: 100%;
+                .ubication, .phone, .email{
+                    margin-bottom: 40px;
+                    .image{
+                        margin-right: 50px;
+                        padding-top: 10px;
+                    }
+                    p{
+                        font-size: 2em;
+                    }
+                }
+            }
+            .column2{
+                margin-left: 0;
+                margin-right: 0;
+                margin-top: 80px;
+                flex-flow: row wrap;
+                .left, .right{
+                    width: 100%;
+                    li{
+                        font-size: 2em;
+                        margin-bottom: 35px;
+                    }
+                }
+            }
+            .column3{
+                margin-top: 65px;
+                width: 100%;
+                justify-content: center;
+                a{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    font-size: 2em;
+                    margin: 15px;
+                    line-height: 1.8em;
+                }   
+            }
+            .copyright{
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 70px;
+                font-weight: 300;
+                font-size: 1.35em;
             }
         }
     }

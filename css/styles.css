@@ -14,9 +14,7 @@ body header {
   background-color: #ebfbff;
 }
 body header .wrapper {
-  padding: 0 80px;
-  padding-top: 50px;
-  padding-bottom: 60px;
+  padding: 50px 80px 60px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -35,7 +33,7 @@ body header .wrapper .huddle .btn-white {
   text-decoration: none;
   background: #fff;
   color: #00252e;
-  padding: 14px 65px;
+  padding: 14px 60px;
   border-radius: 50px;
   font-weight: 700;
   font-size: 0.875em;
@@ -68,6 +66,7 @@ body header .wrapper .information .btn-pink {
   width: 55%;
   text-align: center;
   max-width: 300px;
+  box-shadow: 0 10px 15px -3px rgba(255, 82, 191, 0.3), 0 4px 6px -2px rgba(255, 82, 191, 0.3);
 }
 body header .wrapper .illustration {
   width: 55%;
@@ -77,14 +76,13 @@ body header .wrapper .illustration img {
   width: 100%;
 }
 body main {
-  padding: 0 105px;
   margin-top: 160px;
 }
 body main .card {
   display: flex;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
   border-radius: 15px;
-  margin-bottom: 40px;
+  margin: 0 105px 40px;
 }
 body main .card .card-content {
   padding: 0 120px;
@@ -159,9 +157,6 @@ body footer .logo {
   width: 100%;
   margin-bottom: 40px;
 }
-body footer .logo .logo-white {
-  fill: #fff;
-}
 body footer .column1 {
   width: 32%;
 }
@@ -173,8 +168,8 @@ body footer .column1 .ubication .image, body footer .column1 .phone .image, body
   margin-right: 25px;
   padding-top: 5px;
 }
-body footer .column1 .ubication .image img, body footer .column1 .phone .image img, body footer .column1 .email .image img {
-  opacity: 0.85;
+body footer .column1 .ubication .image svg, body footer .column1 .phone .image svg, body footer .column1 .email .image svg {
+  opacity: 1;
 }
 body footer .column1 .ubication p, body footer .column1 .phone p, body footer .column1 .email p {
   opacity: 0.85;
@@ -197,8 +192,10 @@ body footer .column2 .left li, body footer .column2 .right li {
 body footer .column2 .left {
   margin-right: 120px;
 }
+body footer .column3 {
+  display: flex;
+}
 body footer .column3 a {
-  display: inline-block;
   text-decoration: none;
   color: #fff;
   width: 30px;
@@ -232,6 +229,164 @@ body footer .attribution a {
 }
 body footer .attribution a:hover {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 1440px) {
+  body header .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  body main .card {
+    max-width: 1230px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  body main .advice {
+    max-width: 936px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body header {
+    background-image: url("../images/bg-hero-mobile.svg");
+    background-color: #ebfbff;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  body header .wrapper {
+    padding: 50px 30px 64px;
+  }
+  body header .wrapper .huddle {
+    margin-bottom: 165px;
+  }
+  body header .wrapper .huddle .btn-white {
+    padding: 10px 45px;
+    font-size: 1.25em;
+  }
+  body header .wrapper .information, body header .wrapper .illustration {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  body header .wrapper .information {
+    padding: 0 40px;
+    margin-bottom: 106px;
+  }
+  body header .wrapper .information h2 {
+    font-size: 3em;
+    margin-bottom: 40px;
+  }
+  body header .wrapper .information p {
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-bottom: 65px;
+  }
+  body header .wrapper .information .btn-pink {
+    max-width: none;
+    width: 79%;
+    font-size: 1.45em;
+    line-height: 1.8em;
+    color: rgba(255, 255, 255, 0.95);
+  }
+  body header .wrapper .illustration {
+    padding: 0 45px;
+  }
+  body main {
+    margin-top: 120px;
+  }
+  body main .card {
+    margin: 0 40px 80px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    padding-bottom: 65px;
+  }
+  body main .card:nth-child(2) {
+    flex-direction: column;
+  }
+  body main .card .card-image, body main .card .card-content {
+    width: 100%;
+  }
+  body main .card .card-image {
+    padding: 15%;
+  }
+  body main .card .card-content {
+    margin-top: 10px;
+    text-align: center;
+    padding: 0 80px;
+  }
+  body main .card .card-content h3 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  body main .card .card-content p {
+    font-size: 1.75em;
+  }
+  body main .advice {
+    width: 94%;
+    margin-top: 102px;
+    padding-top: 90px;
+    border-radius: 30px;
+    bottom: -140px;
+  }
+  body main .advice h2 {
+    font-size: 2.25em;
+    margin-bottom: 50px;
+  }
+  body main .advice a {
+    margin-bottom: 80px;
+    width: 56.5%;
+    padding: 27px 0;
+  }
+  body footer {
+    padding: 280px 35px 0;
+  }
+  body footer .column1 {
+    width: 100%;
+  }
+  body footer .column1 .ubication, body footer .column1 .phone, body footer .column1 .email {
+    margin-bottom: 40px;
+  }
+  body footer .column1 .ubication .image, body footer .column1 .phone .image, body footer .column1 .email .image {
+    margin-right: 50px;
+    padding-top: 10px;
+  }
+  body footer .column1 .ubication p, body footer .column1 .phone p, body footer .column1 .email p {
+    font-size: 2em;
+  }
+  body footer .column2 {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 80px;
+    flex-flow: row wrap;
+  }
+  body footer .column2 .left, body footer .column2 .right {
+    width: 100%;
+  }
+  body footer .column2 .left li, body footer .column2 .right li {
+    font-size: 2em;
+    margin-bottom: 35px;
+  }
+  body footer .column3 {
+    margin-top: 65px;
+    width: 100%;
+    justify-content: center;
+  }
+  body footer .column3 a {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 2em;
+    margin: 15px;
+    line-height: 1.8em;
+  }
+  body footer .copyright {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    font-weight: 300;
+    font-size: 1.35em;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
