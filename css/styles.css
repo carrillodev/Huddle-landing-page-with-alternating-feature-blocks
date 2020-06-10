@@ -189,6 +189,13 @@ body footer .column2 .left li, body footer .column2 .right li {
   opacity: 0.85;
   margin-bottom: 20px;
 }
+body footer .column2 .left li a, body footer .column2 .right li a {
+  text-decoration: none;
+  color: #fff;
+}
+body footer .column2 .left li a:hover, body footer .column2 .right li a:hover {
+  text-decoration: underline;
+}
 body footer .column2 .left {
   margin-right: 120px;
 }

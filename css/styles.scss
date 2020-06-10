@@ -191,6 +191,13 @@ body{
                 li{
                     opacity: 0.85;
                     margin-bottom: 20px;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
                 }
             }
             .left{
